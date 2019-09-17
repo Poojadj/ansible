@@ -1,5 +1,6 @@
 - name: create_directory
   hosts: all
+  remote_user: chefdev
   tasks:
 
    - name: Creates directory
