@@ -1,7 +1,5 @@
 ---
 - hosts: all
-  remote_user: chefdev
-  become: yes
   tasks:
   - name: " Installing Docker latest version"
     yum:
@@ -20,3 +18,4 @@
       state: started
       ports:
         - "5001:5000"
+
